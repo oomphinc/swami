@@ -1,0 +1,32 @@
+body {
+	font-size: 1.45em;
+	padding: 0;
+	margin: 0;
+}
+
+/**
+ * Use the pixel size of the eventual printing medium
+ */
+.container {
+	width: 320px;
+	height: 210px;
+	overflow: hidden;
+	margin-left: .5em;
+	margin-top: .25em;
+}
+
+h1, h2 {
+	text-align: center;
+	margin: 0 0 .25em 0;
+	line-height: 1em;
+}
+
+h1 {
+	font-family: 'Creepster', cursive; 
+}
+
+h2 {
+	font-family: 'Luminari', sans-serif;
+	/** Add .15em for descenders **/
+	padding-bottom: .15em;
+}  
