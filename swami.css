@@ -1,0 +1,164 @@
+
+body {
+	margin: 0;
+	background: #000;
+	overflow: hidden;
+}
+
+#swami_video {
+	position: relative;
+	-webkit-animation: film-shake-v 9s infinite, film-shake-h 8s infinite, flicker 15s infinite;
+	-webkit-animation-timing-function: ease;
+}
+
+@-webkit-keyframes film-blur {
+  0%   { -webkit-filter: blur(0.5px); }
+  13% { -webkit-filter: blur(1px); }
+  26% { -webkit-filter: blur(1.5px); }
+  34% { -webkit-filter: blur(0.5px); }
+  41% { -webkit-filter: blur(1.5px); }
+  52% { -webkit-filter: blur(1.25px); }
+  67% { -webkit-filter: blur(0.5px); }
+  84% { -webkit-filter: blur(1.5px); }
+  100% { -webkit-filter: blur(0.5px); }
+}
+
+@-webkit-keyframes film-shake-v {
+  0%   { top: 4px; }
+  13% { top: 16px; }
+  26% { top: 8px; }
+  34% { top: -8px; }
+  41% { top: 5px; }
+  52% { top: -12px; }
+  67% { top: 0px; }
+  84% { top: 8px; }
+  100% { top: 4px; }
+}
+
+@-webkit-keyframes film-shake-h {
+  0%   { left: 0; }
+  13% { left: 12px; }
+  26% { left: -5px; }
+  34% { left: 4px; }
+  41% { left: 0px; }
+  52% { left: 6px; }
+  67% { left: -4px; }
+  84% { left: 10px; }
+  100% { left: 0px; }
+}
+
+@-webkit-keyframes film-opacity {
+	0%  { opacity: 1; }
+	5%  {}
+	10%  { opacity: 0.7; }
+	20%  { opacity: 0.9; }
+	30%  { opacity: 0; }
+	40%  { opacity: 0.5; }
+	50%  { opacity: 0; }
+	60%  { opacity: 0.4; }
+	70%  { opacity: 0.6; }
+	80%  { opacity: 0.34; }
+	90%  { opacity: 0; }
+	100%  { opacity: 1; }
+}
+
+@-webkit-keyframes film-light {
+ 0%   { -webkit-filter: brightness(50%); }
+ 17% { -webkit-filter: brightness(100%); }
+ 34% { -webkit-filter: brightness(68%); }
+ 62% { -webkit-filter: brightness(42%); }
+ 100% { -webkit-filter: brightness(50%); }
+}
+
+@-webkit-keyframes flicker {
+	from {
+		opacity: 0;
+	}
+	4% {
+		opacity: 0.45;
+	}
+	6% {
+		opacity: 0.55;
+	}
+	8% {
+		opacity: 0.55;
+	}
+	12% {
+		opacity: 0;
+	}
+	14% {
+		opacity: 0.5;
+	}
+	16% {
+		opacity: 0.70;
+	}
+	17% {
+		opacity: 0.55;
+	}
+	19% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 0.74;
+	}
+	24% {
+		opacity: 0;
+	}
+	26% {
+		opacity: 0.69;
+	}
+	28% {
+		opacity: 0.45;
+	}
+	34% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 0.7;
+	}
+	42% {
+		opacity: 0.6;
+	}
+	44% {
+		opacity: 0;
+	}
+	46% {
+		opacity: 0.34;
+	}
+	56% {
+		opacity: 0;
+	}
+	58% {
+		opacity: 0.75;
+	}
+	60% {
+		opacity: 0.45;
+	}
+	64% {
+		opacity: 0;
+	}
+	70% {
+		opacity: .6; /*peak*/
+	}
+	73% {
+		opacity: 0.34;
+	}
+	79% {
+		opacity: 0.46;
+	}
+	82% {
+		opacity: 0;
+	}
+	93% {
+		opacity: 0.50;
+	}
+	95% {
+		opacity: .6; /*peak*/
+	}
+	97% {
+		opacity: 0.23;
+	}
+	to {
+		opacity: 0;
+	}
+}
