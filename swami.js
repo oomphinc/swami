@@ -4,6 +4,7 @@ jQuery(function($) {
 	var state = 'idle'
 		, end = 0
 		, $video = $('#swami_video')
+		, $printer = $('#printer')
 		, tracker = new tracking.ObjectTracker('face')
 		, speech = new webkitSpeechRecognition()
 		, teaseDelay = 500 //ms between teasers
@@ -81,6 +82,7 @@ jQuery(function($) {
 							state = 'idle';
 							playClip(timeCodes.wait[0]);
 							// PRINT HERE
+							$printer[0].src = '//localhost/name/';
 						} else {
 							// play the next question
 							var q = getRandom(timeCodes.question,asked);
