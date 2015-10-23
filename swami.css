@@ -4,6 +4,8 @@ body {
 	background: #000;
 	overflow: hidden;
 	height: 100%;
+	-webkit-transform: scaleY(-1);
+	transform: scaleY(-1);
 }
 
 .face {
@@ -19,6 +21,10 @@ body {
 
 #webcam {
 	visibility: hidden;
+}
+
+iframe {
+	display: none;
 }
 
 @-webkit-keyframes film-blur {
