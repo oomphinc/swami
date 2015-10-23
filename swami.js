@@ -79,10 +79,8 @@ jQuery(function($) {
 						// done with Q's, move on
 						if (asked.length==toAsk) {
 							asked.length = 0; //clear array
-							state = 'idle';
+							state = 'wait';
 							playClip(timeCodes.wait[0]);
-							// PRINT HERE
-							$printer[0].src = '//localhost/name/';
 						} else {
 							// play the next question
 							var q = getRandom(timeCodes.question,asked);
@@ -97,6 +95,12 @@ jQuery(function($) {
 							speech.start();
 						}
 					}
+				break;
+
+				case 'wait':
+					// PRINT HERE
+					$printer[0].src = '//localhost/name/';
+					state = 'idle';
 				break;
 
 				default:
