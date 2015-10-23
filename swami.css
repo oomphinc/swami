@@ -13,6 +13,7 @@ body {
 }
 
 #swami_video {
+	-webkit-filter: brightness(3);
 	position: relative;
 	-webkit-animation: film-shake-v 9s infinite, film-shake-h 8s infinite, flicker 15s infinite;
 	-webkit-animation-timing-function: ease;
