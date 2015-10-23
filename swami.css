@@ -3,12 +3,22 @@ body {
 	margin: 0;
 	background: #000;
 	overflow: hidden;
+	height: 100%;
+}
+
+.face {
+	background: green;
 }
 
 #swami_video {
 	position: relative;
 	-webkit-animation: film-shake-v 9s infinite, film-shake-h 8s infinite, flicker 15s infinite;
 	-webkit-animation-timing-function: ease;
+	height: 300px;
+}
+
+#webcam {
+	visibility: hidden;
 }
 
 @-webkit-keyframes film-blur {
